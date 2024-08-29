@@ -27,5 +27,5 @@ def engine(
                 f"'{player_answer}' is wrong answer ;(. "
                 f"Correct answer was '{correct_answer}'."
             )
-            print(f"Let's try again, {name}")
+            print(f"Let's try again, {name}!")
             break

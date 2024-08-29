@@ -7,7 +7,9 @@ NUMBER_RANGE: tuple[int, int] = (0, 100)
 
 def calculate_gcd(x: int, y: int) -> int:
     x, y = min(x, y), max(x, y)
-    if x != 0 and y % x == 0:
+    if x == 0:
+        return y
+    elif y % x == 0:
         return x
     else:
         divisor: int = x // 2
@@ -23,3 +25,5 @@ def generate_question_and_answer() -> tuple[str, str]:
     question: str = f'{first_number} {second_number}'
     answer: str = str(calculate_gcd(first_number, second_number))
     return question, answer
+
+print(calculate_gcd(67, 0))

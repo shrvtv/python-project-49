@@ -2,6 +2,13 @@
 [![Actions Status](https://github.com/shrvtv/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/shrvtv/python-project-49/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/d9913858e746ff1fb9a2/maintainability)](https://codeclimate.com/github/shrvtv/python-project-49/maintainability)
 
+## Installation
+```Shell
+git clone git@github.com:shrvtv/python-project-49.git
+cd python-project-49
+make build
+make package-install
+```
 ## Games
 ### brain-even
 [![asciicast](https://asciinema.org/a/0nzipZMpf19hrUP4vbVSxaEa4.svg)](https://asciinema.org/a/0nzipZMpf19hrUP4vbVSxaEa4)

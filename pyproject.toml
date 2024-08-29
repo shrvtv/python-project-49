@@ -1,7 +1,11 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "A collection of terminal-based mathematical mini-games."
+classifiers = [
+  "Topic :: Games/Entertainment"
+]
+repository = "https://github.com/shrvtv/python-project-49"
 authors = ["Artem Sharovatov <hexlet@sharovatov.me>"]
 readme = "README.md"
 packages = [

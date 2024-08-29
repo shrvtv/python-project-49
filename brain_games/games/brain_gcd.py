@@ -7,7 +7,7 @@ NUMBER_RANGE: tuple[int, int] = (0, 100)
 
 def calculate_gcd(x: int, y: int) -> int:
     x, y = min(x, y), max(x, y)
-    if y % x == 0:
+    if x != 0 and y % x == 0:
         return x
     else:
         divisor: int = x // 2

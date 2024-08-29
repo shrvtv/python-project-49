@@ -1,11 +1,11 @@
 import random
 
 
-task: str = 'Answer "yes" if the number is even, otherwise answer "no".'
+TASK: str = 'Answer "yes" if the number is even, otherwise answer "no".'
+NUMBER_RANGE: tuple[int, int] = (-999, 999)
 
 
 def generate_question_and_answer() -> tuple[str, str]:
-    number_range: tuple[int, int] = (-999, 999)
-    number: int = random.randint(*number_range)
+    number: int = random.randint(*NUMBER_RANGE)
     correct_answer: str = 'yes' if number % 2 == 0 else 'no'
     return str(number), correct_answer

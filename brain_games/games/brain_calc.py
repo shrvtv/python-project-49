@@ -27,4 +27,5 @@ def generate_question_and_answer() -> tuple[str, str]:
         case 'multiplication':
             expression_sign = '*'
             answer = first_number * second_number
-    return f'{first_number} {expression_sign} {second_number}', str(answer)
+    question: str = f'{first_number} {expression_sign} {second_number}'
+    return question, str(answer)

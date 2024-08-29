@@ -17,10 +17,9 @@ def calculate_gcd(x: int, y: int) -> int:
 
 
 def generate_question_and_answer() -> tuple[str, str]:
-    range_min: int = 0
-    range_max: int = 100
-    first_number: int = random.randint(range_min, range_max)
-    second_number: int = random.randint(range_min, range_max)
+    number_range: tuple[int, int] = (0, 100)
+    first_number: int = random.randint(*number_range)
+    second_number: int = random.randint(*number_range)
     question: str = f'{first_number} {second_number}'
     answer: str = str(calculate_gcd(first_number, second_number))
     return question, answer

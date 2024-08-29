@@ -11,10 +11,9 @@ def generate_question_and_answer() -> tuple[str, str]:
         'multiplication'
     )
     current_mode: str = random.choice(calculation_modes)
-    range_min: int = 0
-    range_max: int = 999
-    first_number: int = random.randint(range_min, range_max)
-    second_number: int = random.randint(range_min, range_max)
+    number_range: tuple[int, int] = (0, 999)
+    first_number: int = random.randint(*number_range)
+    second_number: int = random.randint(*number_range)
     expression_sign: str = ''
     answer: int = 0
     match current_mode:

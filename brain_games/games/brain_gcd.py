@@ -25,5 +25,3 @@ def generate_question_and_answer() -> tuple[str, str]:
     question: str = f'{first_number} {second_number}'
     answer: str = str(calculate_gcd(first_number, second_number))
     return question, answer
-
-print(calculate_gcd(67, 0))

@@ -1,4 +1,5 @@
 import random
+import brain_games.game_engine
 
 
 TASK: str = 'What is the result of the expression?'
@@ -28,3 +29,7 @@ def generate_question_and_answer() -> tuple[str, str]:
             answer = first_number * second_number
     question: str = f'{first_number} {expression_sign} {second_number}'
     return question, str(answer)
+
+
+def play() -> None:
+    brain_games.game_engine.engine(TASK, generate_question_and_answer)

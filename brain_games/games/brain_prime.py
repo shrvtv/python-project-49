@@ -1,4 +1,5 @@
 import random
+import brain_games.game_engine
 
 
 TASK: str = 'Answer "yes" if given number is prime. Otherwise answer "no".'
@@ -21,3 +22,7 @@ def generate_question_and_answer() -> tuple[str, str]:
     question: str = str(number)
     answer: str = 'yes' if is_prime(number) else 'no'
     return question, answer
+
+
+def play() -> None:
+    brain_games.game_engine.engine(TASK, generate_question_and_answer)

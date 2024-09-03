@@ -1,4 +1,5 @@
 import random
+import brain_games.game_engine
 
 
 TASK: str = 'What number is missing in the progression?'
@@ -19,3 +20,7 @@ def generate_question_and_answer() -> tuple[str, str]:
     elements[hidden_element_index] = '..'
     question: str = ' '.join(elements)
     return question, answer
+
+
+def play() -> None:
+    brain_games.game_engine.engine(TASK, generate_question_and_answer)

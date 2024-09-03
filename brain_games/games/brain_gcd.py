@@ -1,4 +1,5 @@
 import random
+import brain_games.game_engine
 
 
 TASK: str = 'Find the greatest common divisor of given numbers.'
@@ -25,3 +26,7 @@ def generate_question_and_answer() -> tuple[str, str]:
     question: str = f'{first_number} {second_number}'
     answer: str = str(calculate_gcd(first_number, second_number))
     return question, answer
+
+
+def play() -> None:
+    brain_games.game_engine.engine(TASK, generate_question_and_answer)

@@ -1,4 +1,5 @@
 import random
+import brain_games.game_engine
 
 
 TASK: str = 'Answer "yes" if the number is even, otherwise answer "no".'
@@ -9,3 +10,7 @@ def generate_question_and_answer() -> tuple[str, str]:
     number: int = random.randint(*NUMBER_RANGE)
     correct_answer: str = 'yes' if number % 2 == 0 else 'no'
     return str(number), correct_answer
+
+
+def play() -> None:
+    brain_games.game_engine.engine(TASK, generate_question_and_answer)
